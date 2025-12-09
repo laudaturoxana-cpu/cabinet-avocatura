@@ -1100,6 +1100,41 @@ const Contact: React.FC = () => {
   );
 };
 
+const WebDevCTA: React.FC = () => {
+  return (
+    <section className="section py-12 md:py-16 bg-gradient-to-br from-secondary/10 via-white to-primary/5">
+      <div className="container-layout">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
+            <span className="text-3xl">💻</span>
+          </div>
+          <h2 className="font-heading text-2xl md:text-3xl font-semibold text-primary mb-4">
+            Îți dorești și tu un site profesional ca acesta?
+          </h2>
+          <p className="text-base md:text-lg text-textSecondary mb-6 max-w-2xl mx-auto leading-relaxed">
+            Site-ul pe care îl vezi acum a fost creat de <span className="font-semibold text-primary">Roxana Laudatu</span>,
+            specializată în dezvoltarea de website-uri moderne și profesionale pentru cabinete de avocatură,
+            clinici medicale, business-uri locale și multe altele.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
+            <a
+              href="https://calendly.com/laudatu-roxana/30min"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center rounded-md bg-accent px-8 py-3 text-sm md:text-base font-semibold text-white shadow-card hover:shadow-lg hover:bg-primary transition-all"
+            >
+              📅 Programează o consultație gratuită (30 min)
+            </a>
+          </div>
+          <p className="text-xs md:text-sm text-textSecondary">
+            ✓ Design modern și responsive &nbsp;•&nbsp; ✓ Optimizat SEO &nbsp;•&nbsp; ✓ Performanță maximă &nbsp;•&nbsp; ✓ Hosting inclus
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const Footer: React.FC = () => {
   return (
     <footer className="bg-primary text-slate-100 pt-10">
@@ -1243,6 +1278,7 @@ export default function HomePage() {
         <FAQ />
         <Contact />
       </main>
+      <WebDevCTA />
       <Footer />
       <WhatsAppButton />
     </div>
