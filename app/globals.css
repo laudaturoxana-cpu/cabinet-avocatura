@@ -21,10 +21,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: var(--font-inter);
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 .font-heading {
@@ -43,7 +47,21 @@ body {
   max-width: 1120px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-layout {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-layout {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 

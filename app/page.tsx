@@ -1102,32 +1102,38 @@ const Contact: React.FC = () => {
 
 const WebDevCTA: React.FC = () => {
   return (
-    <section className="section py-12 md:py-16 bg-gradient-to-br from-secondary/10 via-white to-primary/5">
+    <section className="section py-10 md:py-16 bg-gradient-to-br from-secondary/10 via-white to-primary/5">
       <div className="container-layout">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
-            <span className="text-3xl">💻</span>
+        <div className="max-w-4xl mx-auto text-center px-4">
+          <div className="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-primary/10 mb-3 md:mb-4">
+            <span className="text-2xl md:text-3xl">💻</span>
           </div>
-          <h2 className="font-heading text-2xl md:text-3xl font-semibold text-primary mb-4">
+          <h2 className="font-heading text-xl md:text-3xl font-semibold text-primary mb-3 md:mb-4 px-2">
             Îți dorești și tu un site profesional ca acesta?
           </h2>
-          <p className="text-base md:text-lg text-textSecondary mb-6 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-lg text-textSecondary mb-5 md:mb-6 max-w-2xl mx-auto leading-relaxed px-2">
             Site-ul pe care îl vezi acum a fost creat de <span className="font-semibold text-primary">Roxana Laudatu</span>,
             specializată în dezvoltarea de website-uri moderne și profesionale pentru cabinete de avocatură,
             clinici medicale, business-uri locale și multe altele.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
+          <div className="flex flex-col gap-3 md:gap-4 justify-center items-stretch md:items-center mb-4 px-2">
             <a
               href="https://calendly.com/laudatu-roxana/30min"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-md bg-accent px-8 py-3 text-sm md:text-base font-semibold text-white shadow-card hover:shadow-lg hover:bg-primary transition-all"
+              className="inline-flex items-center justify-center rounded-md bg-accent px-6 md:px-8 py-3 text-sm md:text-base font-semibold text-white shadow-card hover:shadow-lg hover:bg-primary transition-all w-full md:w-auto"
             >
-              📅 Programează o consultație gratuită (30 min)
+              📅 Programează consultație gratuită
             </a>
           </div>
-          <p className="text-xs md:text-sm text-textSecondary">
-            ✓ Design modern și responsive &nbsp;•&nbsp; ✓ Optimizat SEO &nbsp;•&nbsp; ✓ Performanță maximă &nbsp;•&nbsp; ✓ Hosting inclus
+          <p className="text-xs md:text-sm text-textSecondary px-2 leading-relaxed">
+            ✓ Design modern și responsive<br className="md:hidden" />
+            <span className="hidden md:inline"> &nbsp;•&nbsp; </span>
+            ✓ Optimizat SEO<br className="md:hidden" />
+            <span className="hidden md:inline"> &nbsp;•&nbsp; </span>
+            ✓ Performanță maximă<br className="md:hidden" />
+            <span className="hidden md:inline"> &nbsp;•&nbsp; </span>
+            ✓ Hosting inclus
           </p>
         </div>
       </div>
@@ -1205,18 +1211,18 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="border-t border-primaryDark">
-        <div className="container-layout flex flex-col gap-2 py-3 text-xs text-slate-100/70 md:flex-row md:items-center md:justify-between">
-          <p>
+        <div className="container-layout flex flex-col gap-3 md:gap-2 py-4 md:py-3 text-xs text-slate-100/70 md:flex-row md:items-center md:justify-between">
+          <p className="text-center md:text-left">
             © 2025 [Nume Cabinet Avocat]. Toate drepturile rezervate.
           </p>
-          <div className="text-right">
-            <span className="mr-1">
+          <div className="text-center md:text-right">
+            <span className="block md:inline md:mr-1 mb-2 md:mb-0">
               Vrei și tu un site profesional ca acesta? Ia legătură cu Roxana Laudatu.
             </span>
             <Link
               href="https://calendly.com/laudatu-roxana/30min"
               target="_blank"
-              className="font-medium text-secondary hover:text-white transition-colors"
+              className="inline-block font-medium text-secondary hover:text-white transition-colors underline"
             >
               Programează o discuție gratuită →
             </Link>
