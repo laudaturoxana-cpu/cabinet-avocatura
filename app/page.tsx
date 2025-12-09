@@ -105,12 +105,14 @@ const Header: React.FC = () => {
               {item.label}
             </button>
           ))}
-          <button
-            onClick={() => handleNavClick("contact")}
+          <a
+            href="https://calendly.com/laudatu-roxana/30min"
+            target="_blank"
+            rel="noreferrer"
             className="ml-4 rounded-md bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-soft hover:bg-primaryDark transition-colors"
           >
             Programează consultație
-          </button>
+          </a>
         </nav>
 
         <button
@@ -147,12 +149,14 @@ const Header: React.FC = () => {
                 {item.label}
               </button>
             ))}
-            <button
-              onClick={() => handleNavClick("contact")}
-              className="mt-2 rounded-md bg-accent px-4 py-2.5 text-sm font-semibold text-white shadow-soft hover:bg-primaryDark transition-colors"
+            <a
+              href="https://calendly.com/laudatu-roxana/30min"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-2 rounded-md bg-accent px-4 py-2.5 text-sm font-semibold text-white shadow-soft hover:bg-primaryDark transition-colors text-center"
             >
               Programează consultație
-            </button>
+            </a>
           </div>
         </div>
       )}
@@ -182,7 +186,9 @@ const Hero: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <a
-              href="#contact"
+              href="https://calendly.com/laudatu-roxana/30min"
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center justify-center rounded-md bg-secondary px-8 py-3 text-sm md:text-base font-semibold text-primary shadow-card hover:shadow-lg transition-shadow"
             >
               Programează o consultație
@@ -1076,7 +1082,7 @@ const Contact: React.FC = () => {
 
           <div className="space-y-3">
             <a
-              href="https://calendly.com/"
+              href="https://calendly.com/laudatu-roxana/30min"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center rounded-md border border-accent px-4 py-2 text-sm font-semibold text-accent hover:bg-accent hover:text-white transition-colors"
@@ -1170,14 +1176,14 @@ const Footer: React.FC = () => {
           </p>
           <div className="text-right">
             <span className="mr-1">
-              Vrei un site profesionist ca acesta pentru cabinetul tău?
+              Vrei și tu un site profesional ca acesta? Ia legătură cu Roxana Laudatu.
             </span>
             <Link
               href="https://calendly.com/laudatu-roxana/30min"
               target="_blank"
-              className="font-medium text-secondary hover:text-white"
+              className="font-medium text-secondary hover:text-white transition-colors"
             >
-              Programează o discuție (30 min)
+              Programează o discuție gratuită →
             </Link>
           </div>
         </div>
