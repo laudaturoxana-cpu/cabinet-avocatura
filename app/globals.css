@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #1a365d;
+  --color-primary-dark: #234e7b;
+  --color-secondary: #c9a961;
+  --color-accent: #2c5282;
+  --color-background: #ffffff;
+  --color-background-alt: #f8f9fa;
+  --color-text-main: #1a202c;
+  --color-text-secondary: #4a5568;
+  --color-border-soft: #e2e8f0;
+
+  --font-inter: system-ui, -apple-system, BlinkMacSystemFont, "Inter",
+    "Segoe UI", sans-serif;
+  --font-playfair: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-lora: "Lora", "Merriweather", Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter);
+}
+
+.font-heading {
+  font-family: var(--font-playfair);
+}
+
+.font-subheading {
+  font-family: var(--font-lora);
+}
+
+.section {
+  scroll-margin-top: 96px;
+}
+
+.container-layout {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
